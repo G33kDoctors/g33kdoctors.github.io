@@ -13,8 +13,8 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#11aaee",
-    "background_color": "#11aaee",
+    "theme_color": "#eeeeee",
+    "background_color": "#eeeeee",
     "start_url": "https://www.g33kdoctors.com",
     "display": "standalone"
 }
