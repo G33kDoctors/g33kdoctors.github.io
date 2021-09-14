@@ -1,0 +1,16 @@
+:root {
+
+    --min-fs: 1;
+    --max-fs: 1.25;
+    --min-vw: 25;
+    --max-vw: 100;
+    --min-fs-rem: var(--min-fs) * 1rem;
+    --max-fs-rem: var(--max-fs) * 1rem;
+    --min-vw-rem: var(--min-vw) * 1rem;
+    
+    --slope: (var(--max-fs) - var(--min-fs)) * (100vw - var(--min-vw-rem)) / (var(--max-vw) - var(--min-vw));
+
+ /* Font Weight */
+    --min-fw: 400;
+    --max-fw: 700;
+}

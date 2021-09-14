@@ -1,6 +1,11 @@
 {
     "name": "G33K Doctors",
     "short_name": "G33K Doctors",
+    "start_url": "https://www.g33kdoctors.com",
+    "display": "standalone",
+    "categories": "business",
+    "background_color": "#eeeeee",
+    "theme_color": "#eeeeee",
     "icons": [
         {
             "src": "/android-chrome-36x36.png",
@@ -47,9 +52,5 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ],
-    "theme_color": "#eeeeee",
-    "background_color": "#eeeeee",
-    "start_url": "https://www.g33kdoctors.com",
-    "display": "standalone"
+    ]
 }

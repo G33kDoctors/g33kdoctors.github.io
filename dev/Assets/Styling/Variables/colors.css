@@ -1,0 +1,65 @@
+
+:root {
+    
+    /*      Shade Base                      Primary Color                   Accent Color        */
+            --shdHue:       0;              --priHue:       217;            --accHue:       160;
+            --shdSat:      0%;              --priSatBase:    89;            --accSatBase:    93;
+            --shdLitBase:   0;              --priLitBase:    88;            --accLitBase:    37;
+
+    /* Shades */
+
+    /* Name: Chinese Black */
+    /* hsl(0, 0%, 7%) */
+    --shdBlackBase: 7;                  --shdBlack: calc((var(--shdBlackBase) + var(--shdLitBase)) * 1%);
+
+    /* Name: Dark Charcoal */
+    /* hsl(0, 0%, 20%) */
+    --shdDarkBase: 20;                  --shdDark: calc((var(--shdDarkBase) + var(--shdLitBase)) * 1%);
+
+    /* Name: Chinese Gray */
+    /* hsl(0, 0%, 80%) */
+    --shdLightBase: 80;                 --shdLight: calc((var(--shdLightBase) + var(--shdLitBase)) * 1%);
+
+    /* Name: Bright Gray */
+    /* hsl(0, 0%, 93%) */
+    --shdWhiteBase: 93;                 --shdWhite: calc((var(--shdWhiteBase) + var(--shdLitBase)) * 1%);
+
+    /* Primary Color */
+    /* Name: Royal Azure Blue */
+    /* hsl(217, 89%, 88%) */
+    --priSat: calc(var(--priSatBase) * 1%);
+    --priLit: calc(var(--priLitBase) * 1%);
+
+    /* Accent Color */
+    /* Name: Castleton Green */
+    /* hsl(160, 93%, 37%) */
+    --accSat: calc(var(--accSatBase) * 1%);
+    --accLit: calc(var(--accLitBase) * 1%);
+
+/* Shade Variations */
+    --Shade-Black:                      hsl(var(--shdHue), var(--shdSat), var(--shdBlack));
+    --Shade-Dark:                       hsl(var(--shdHue), var(--shdSat), var(--shdDark));
+    --Shade-Light:                      hsl(var(--shdHue), var(--shdSat), var(--shdLight));
+    --Shade-White:                      hsl(var(--shdHue), var(--shdSat), var(--shdWhite));
+
+/* Primary Color Variations */
+    --Primary-Color:                    hsl(var(--priHue), var(--priSat), var(--priLit));
+    --Primary-ColorDark:                hsl(var(--priHue), var(--satDark), var(--litDark));
+    --Primary-ColorLight:               hsl(var(--priHue), var(--satLight), var(--litLight));
+
+/* Accent Color Variations */
+    --Accent-Color:                     hsl(var(--accHue), var(--accSat), var(--accLit));
+    --Accent-ColorDark:                 hsl(var(--accHue), var(--satDark), var(--litDark));
+    --Accent-ColorLight:                hsl(var(--accHue), var(--satLight), var(--litLight));
+
+/* Color Light and Dark Adjustment Amount */
+    --shdEffect:    15%;
+
+/* Saturation Values Calculation */
+    --satDark: calc(var(--priSat) + var(--shdEffect));
+    --satLight: calc(var(--priSat) - var(--shdEffect));
+
+/* Lightness Values Calculation */
+    --litDark: calc(var(--priLit) - var(--shdEffect));
+    --litLight: calc(var(--priLit) + var(--shdEffect));
+}
