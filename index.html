@@ -25,113 +25,7 @@
 
     <!-- Above the Fold -->
     <style>
-        body {
-            grid-template:
-                'header'
-                'main'
-                'footer';
-            grid-gap: .2em;
-            color: #333;
-            background-color: #eee;
-            overflow-x: hidden;
-        }
-        svg { height: auto; width: 100%;}
-        blockquote {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
-            font-style: italic;
-            text-align: center;
-            margin: 0.5em;
-            max-width: 95vw;
-        }
-        blockquote::before, blockquote::after {
-            font-size: 2em;
-            padding: 0 0.25em;
-        }
-        blockquote::before {
-            justify-content: flex-start;
-            content: open-quote;
-        }
-        blockquote::after {
-            justify-content: flex-end;
-            content: close-quote;
-        }
-        body > header {
-            grid-area: header;
-            background-color: #111;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' height='304' width='304' fill='%231188cc' fill-opacity='0.1'%3E%3Cpath d='M44.1 224a5 5 0 110 2H0v-2h44.1zm160 48a5 5 0 110 2H82v-2h122.1zm57.8-46a5 5 0 110-2H304v2h-42.1zm0 16a5 5 0 110-2H304v2h-42.1zm6.2-114a5 5 0 110 2h-86.2a5 5 0 110-2h86.2zm-256-48a5 5 0 110 2H0v-2h12.1zm185.8 34a5 5 0 110-2h86.2a5 5 0 110 2h-86.2zM258 12.1a5 5 0 11-2 0V0h2v12.1zm-64 208a5 5 0 11-2 0v-54.2a5 5 0 112 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 112 0zm16 16V64h46v2h-48V37.9a5 5 0 112 0zm-128 96V208h16v12.1a5 5 0 11-2 0V210h-16v-76.1a5 5 0 112 0zm-5.9-21.9a5 5 0 110 2H114v48H85.9a5 5 0 110-2H112v-48h12.1zm-6.2 130a5 5 0 110-2H176v-74.1a5 5 0 112 0V242h-60.1zm-16-64a5 5 0 110-2H114v48h10.1a5 5 0 110 2H112v-48h-10.1zM66 284.1a5 5 0 11-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 110 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 110-2H274v44.1a5 5 0 11-2 0V146h-10.1zm-64 96a5 5 0 110-2H208v-80h16v-14h-42.1a5 5 0 110-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 110 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 110-2H96v-42.1a5 5 0 112 0zM53.9 34a5 5 0 110-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 110-2H80V64h32V37.9a5 5 0 112 0zM101.9 82a5 5 0 110-2H128V37.9a5 5 0 112 0V82h-28.1zm16-64a5 5 0 110-2H146v44.1a5 5 0 11-2 0V18h-26.1zm102.2 270a5 5 0 110 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 112 0zM53.9 18a5 5 0 110-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 110-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 01-9.8-2h2a3 3 0 105.7 0H178v34h-18V21.9a5 5 0 112 0V32h14V2h-58.1zm0 96a5 5 0 110-2H137l32-32h39V21.9a5 5 0 112 0V66h-40.2l-32 32H118zm28.1 90.1a5 5 0 11-2 0v-76.5L175.6 80H224V21.9a5 5 0 112 0V82h-49.6L146 112.4v75.7zm16 32a5 5 0 11-2 0v-99.5L184.6 96H300a5 5 0 013.9-3.9v2a3 3 0 000 5.7v2.1a5 5 0 01-3.9-3.9H185.4L162 121.4v98.7zm-144-64a5 5 0 11-2 0v-3.5l48-48V48h32V0h2v50H66v55.4l-48 48v2.7zM50 53.9v43.5l-48 48V208h26.1a5 5 0 110 2H0v-65.4l48-48V53.9a5 5 0 112 0zm-16 16v19.5l-34 34v-2.8l32-32V69.9a5 5 0 112 0zM12.1 32a5 5 0 110 2H9.4L0 43.4v-2.8L8.6 32H12zm265.8 18a5 5 0 110-2h18.7l7.4-7.4v2.8l-6.6 6.6H278zm-16 160a5 5 0 110-2H288v-71.4l16-16v2.8l-14 14V210h-28.1zm-208 32a5 5 0 110-2H64v-22.6L40.6 194H21.9a5 5 0 110-2h19.5L66 216.6V242H53.9zm150.2 14a5 5 0 110 2H96v-56.6L56.6 162H37.9a5 5 0 110-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 110-2H80v-46.6L48.6 178H21.9a5 5 0 110-2h27.5L82 208.6V258H53.9zM34 39.8v1.6L9.4 66H0v-2h8.6L32 40.6V0h2v39.8zM2 300.1a5 5 0 013.9 3.9h-2a3 3 0 00-3.9-1.8V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5 5 0 016 97a5 5 0 01-6 4.9v-2a3 3 0 100-5.7V92zM80 272h2v32h-2v-32zm37.9 32h-2a3 3 0 00-5.7 0H108a5 5 0 019.8 0zM5.9 0A5 5 0 010 5.9v-2A3 3 0 003.8 0H6zm294.2 0h2a3 3 0 001.9 3.8V6a5 5 0 01-3.9-5.9zm3.9 300.1v2a3 3 0 00-1.8 1.9H300a5 5 0 013.9-3.9zM97 100a3 3 0 100-6 3 3 0 000 6zm0-16a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm-48 32a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm32 48a3 3 0 100-6 3 3 0 000 6zm-16 16a3 3 0 100-6 3 3 0 000 6zm32-16a3 3 0 100-6 3 3 0 000 6zm0-32a3 3 0 100-6 3 3 0 000 6zm16 32a3 3 0 100-6 3 3 0 000 6zm32 16a3 3 0 100-6 3 3 0 000 6zm0-16a3 3 0 100-6 3 3 0 000 6zm-16-64a3 3 0 100-6 3 3 0 000 6zm16 0a3 3 0 100-6 3 3 0 000 6zm16 96a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm16-144a3 3 0 100-6 3 3 0 000 6zm0 32a3 3 0 100-6 3 3 0 000 6zm16-32a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6zm-96 0a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm16-32a3 3 0 100-6 3 3 0 000 6zm96 0a3 3 0 100-6 3 3 0 000 6zm-16-64a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6zm-32 0a3 3 0 100-6 3 3 0 000 6zm0-16a3 3 0 100-6 3 3 0 000 6zm-16 0a3 3 0 100-6 3 3 0 000 6zm-16 0a3 3 0 100-6 3 3 0 000 6zm-16 0a3 3 0 100-6 3 3 0 000 6zM49 36a3 3 0 100-6 3 3 0 000 6zm-32 0a3 3 0 100-6 3 3 0 000 6zm32 16a3 3 0 100-6 3 3 0 000 6zM33 68a3 3 0 100-6 3 3 0 000 6zm16-48a3 3 0 100-6 3 3 0 000 6zm0 240a3 3 0 100-6 3 3 0 000 6zm16 32a3 3 0 100-6 3 3 0 000 6zm-16-64a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm-16-32a3 3 0 100-6 3 3 0 000 6zm80-176a3 3 0 100-6 3 3 0 000 6zm16 0a3 3 0 100-6 3 3 0 000 6zm-16-16a3 3 0 100-6 3 3 0 000 6zm32 48a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6zm0-32a3 3 0 100-6 3 3 0 000 6zm112 176a3 3 0 100-6 3 3 0 000 6zm-16 16a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zM17 180a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm0-32a3 3 0 100-6 3 3 0 000 6zm16 0a3 3 0 100-6 3 3 0 000 6zM17 84a3 3 0 100-6 3 3 0 000 6zm32 64a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6z'/%3E%3C/svg%3E");
-            color: #eee;
-            width: 100%;
-            height: 100vh;
-        }
-        section#logo {
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
-            min-width: 20rem;
-        }
-        section#logo svg#g33k-logo {
-            padding-bottom: 1em;
-            max-height: 50vh;
-            max-width: 90vw;
-        }
-        section#logo h1 svg {
-            width: 40vw;
-            min-width: 20em;
-        }
-        body > main {
-            grid-area: main;
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-        }
-        article#updates {
-            background-color: #ccc;
-            border: 2px solid #999;
-            padding: 0.5em;
-            margin: 0.5em 0;
-            width: 50vw;
-            min-width: 20em;
-        }
-        article#updates > section {
-            margin: 1em 0;
-        }
-        article#updates > section > p {
-            margin-bottom: 1em;
-        }
-        span#definition {
-            display: flex;
-            flex-flow: row wrap;
-            justify-self: center;
-            background-color: #aaa;
-            border: 1px solid #999;
-            padding: 0.5em;
-            margin-bottom: 1em;
-            width: 40vw;
-            min-width: 20em;
-        }
-        span#definition a {
-            color: #111;
-            font-size: 125%;
-            font-weight: 800;
-            text-decoration: none;
-            border-bottom: 3px dashed #111;
-        }
-        span#definition p {
-            text-align: right;
-        }
-        body > footer {
-            grid-area: footer;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-evenly;
-            align-items: center;
-            background-color: #1865e0;
-            height: 10vh;
-        }
+        body{grid-template:'header' 'main' 'footer';grid-gap:0.2em;color:#333;background-color:#eee;overflow-x:hidden}h2{font-weight:800}svg{height:auto;width:100%}blockquote{display:flex;flex-flow:row nowrap;justify-content:center;align-items:center;font-style:italic;text-align:center;margin:0.5em;max-width:95vw}blockquote::after,blockquote::before{font-size:2em;padding:0 0.25em}blockquote::before{justify-content:flex-start;content:open-quote}blockquote::after{justify-content:flex-end;content:close-quote}body > header{grid-area:header;background-color:#111;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' height='304' width='304' fill='%231188cc' fill-opacity='0.1'%3E%3Cpath d='M44.1 224a5 5 0 110 2H0v-2h44.1zm160 48a5 5 0 110 2H82v-2h122.1zm57.8-46a5 5 0 110-2H304v2h-42.1zm0 16a5 5 0 110-2H304v2h-42.1zm6.2-114a5 5 0 110 2h-86.2a5 5 0 110-2h86.2zm-256-48a5 5 0 110 2H0v-2h12.1zm185.8 34a5 5 0 110-2h86.2a5 5 0 110 2h-86.2zM258 12.1a5 5 0 11-2 0V0h2v12.1zm-64 208a5 5 0 11-2 0v-54.2a5 5 0 112 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 112 0zm16 16V64h46v2h-48V37.9a5 5 0 112 0zm-128 96V208h16v12.1a5 5 0 11-2 0V210h-16v-76.1a5 5 0 112 0zm-5.9-21.9a5 5 0 110 2H114v48H85.9a5 5 0 110-2H112v-48h12.1zm-6.2 130a5 5 0 110-2H176v-74.1a5 5 0 112 0V242h-60.1zm-16-64a5 5 0 110-2H114v48h10.1a5 5 0 110 2H112v-48h-10.1zM66 284.1a5 5 0 11-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 110 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 110-2H274v44.1a5 5 0 11-2 0V146h-10.1zm-64 96a5 5 0 110-2H208v-80h16v-14h-42.1a5 5 0 110-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 110 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 110-2H96v-42.1a5 5 0 112 0zM53.9 34a5 5 0 110-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 110-2H80V64h32V37.9a5 5 0 112 0zM101.9 82a5 5 0 110-2H128V37.9a5 5 0 112 0V82h-28.1zm16-64a5 5 0 110-2H146v44.1a5 5 0 11-2 0V18h-26.1zm102.2 270a5 5 0 110 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 112 0zM53.9 18a5 5 0 110-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 110-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 01-9.8-2h2a3 3 0 105.7 0H178v34h-18V21.9a5 5 0 112 0V32h14V2h-58.1zm0 96a5 5 0 110-2H137l32-32h39V21.9a5 5 0 112 0V66h-40.2l-32 32H118zm28.1 90.1a5 5 0 11-2 0v-76.5L175.6 80H224V21.9a5 5 0 112 0V82h-49.6L146 112.4v75.7zm16 32a5 5 0 11-2 0v-99.5L184.6 96H300a5 5 0 013.9-3.9v2a3 3 0 000 5.7v2.1a5 5 0 01-3.9-3.9H185.4L162 121.4v98.7zm-144-64a5 5 0 11-2 0v-3.5l48-48V48h32V0h2v50H66v55.4l-48 48v2.7zM50 53.9v43.5l-48 48V208h26.1a5 5 0 110 2H0v-65.4l48-48V53.9a5 5 0 112 0zm-16 16v19.5l-34 34v-2.8l32-32V69.9a5 5 0 112 0zM12.1 32a5 5 0 110 2H9.4L0 43.4v-2.8L8.6 32H12zm265.8 18a5 5 0 110-2h18.7l7.4-7.4v2.8l-6.6 6.6H278zm-16 160a5 5 0 110-2H288v-71.4l16-16v2.8l-14 14V210h-28.1zm-208 32a5 5 0 110-2H64v-22.6L40.6 194H21.9a5 5 0 110-2h19.5L66 216.6V242H53.9zm150.2 14a5 5 0 110 2H96v-56.6L56.6 162H37.9a5 5 0 110-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 110-2H80v-46.6L48.6 178H21.9a5 5 0 110-2h27.5L82 208.6V258H53.9zM34 39.8v1.6L9.4 66H0v-2h8.6L32 40.6V0h2v39.8zM2 300.1a5 5 0 013.9 3.9h-2a3 3 0 00-3.9-1.8V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5 5 0 016 97a5 5 0 01-6 4.9v-2a3 3 0 100-5.7V92zM80 272h2v32h-2v-32zm37.9 32h-2a3 3 0 00-5.7 0H108a5 5 0 019.8 0zM5.9 0A5 5 0 010 5.9v-2A3 3 0 003.8 0H6zm294.2 0h2a3 3 0 001.9 3.8V6a5 5 0 01-3.9-5.9zm3.9 300.1v2a3 3 0 00-1.8 1.9H300a5 5 0 013.9-3.9zM97 100a3 3 0 100-6 3 3 0 000 6zm0-16a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm-48 32a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm32 48a3 3 0 100-6 3 3 0 000 6zm-16 16a3 3 0 100-6 3 3 0 000 6zm32-16a3 3 0 100-6 3 3 0 000 6zm0-32a3 3 0 100-6 3 3 0 000 6zm16 32a3 3 0 100-6 3 3 0 000 6zm32 16a3 3 0 100-6 3 3 0 000 6zm0-16a3 3 0 100-6 3 3 0 000 6zm-16-64a3 3 0 100-6 3 3 0 000 6zm16 0a3 3 0 100-6 3 3 0 000 6zm16 96a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm16-144a3 3 0 100-6 3 3 0 000 6zm0 32a3 3 0 100-6 3 3 0 000 6zm16-32a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6zm-96 0a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm16-32a3 3 0 100-6 3 3 0 000 6zm96 0a3 3 0 100-6 3 3 0 000 6zm-16-64a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6zm-32 0a3 3 0 100-6 3 3 0 000 6zm0-16a3 3 0 100-6 3 3 0 000 6zm-16 0a3 3 0 100-6 3 3 0 000 6zm-16 0a3 3 0 100-6 3 3 0 000 6zm-16 0a3 3 0 100-6 3 3 0 000 6zM49 36a3 3 0 100-6 3 3 0 000 6zm-32 0a3 3 0 100-6 3 3 0 000 6zm32 16a3 3 0 100-6 3 3 0 000 6zM33 68a3 3 0 100-6 3 3 0 000 6zm16-48a3 3 0 100-6 3 3 0 000 6zm0 240a3 3 0 100-6 3 3 0 000 6zm16 32a3 3 0 100-6 3 3 0 000 6zm-16-64a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm-16-32a3 3 0 100-6 3 3 0 000 6zm80-176a3 3 0 100-6 3 3 0 000 6zm16 0a3 3 0 100-6 3 3 0 000 6zm-16-16a3 3 0 100-6 3 3 0 000 6zm32 48a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6zm0-32a3 3 0 100-6 3 3 0 000 6zm112 176a3 3 0 100-6 3 3 0 000 6zm-16 16a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zM17 180a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm0-32a3 3 0 100-6 3 3 0 000 6zm16 0a3 3 0 100-6 3 3 0 000 6zM17 84a3 3 0 100-6 3 3 0 000 6zm32 64a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6z'/%3E%3C/svg%3E");color:#eee;width:100%;height:100vh}section#logo{display:flex;flex-flow:column nowrap;justify-content:center;align-items:center;min-width:20rem}section#logo svg#g33k-logo{padding-bottom:1em;max-height:50vh;max-width:90vw}section#logo h1 svg{width:40vw;min-width:20em}section#logo p{font-size:3em}body > main{grid-area:main;display:flex;flex-flow:column nowrap;align-items:center}article{background-color:#ddd;border:2px solid #999;padding:0.5em;margin:0.5em 0;width:80vw;min-width:20em}article#updates > section{margin:1em 0}article#updates > section > p{margin-bottom:1em}span#definition{display:flex;flex-flow:row wrap;justify-self:center;background-color:#ccc;border:1px solid #999;padding:0.5em;margin-bottom:1em;width:40vw;min-width:20em}span#definition a{color:#111;font-size:125%;font-weight:800;text-decoration:none;border-bottom:3px dashed #111}span#definition p{text-align:right}article#services{display:flex;flex-flow:column nowrap;max-width:70vw}article#services section{display:flex;flex-flow:row wrap}article#services section ul{display:flex;flex-flow:column nowrap;align-self:center;width:60%}article#services section ul li{font-size:125%;padding:0.5em 0}article#services a{text-align:center;font-size:200%;margin:1em 0;text-decoration:none}body > footer{grid-area:footer;display:flex;flex-flow:row wrap;justify-content:space-evenly;align-items:center;background-color:#1865e0;height:10vh}
     </style>
 
     <!-- E Inline Styling -->
@@ -257,6 +151,8 @@
                 />
             </svg>
         </h1>
+        <p>Website Coming Soon!</p>
+        <p>507-594-0360</p>
         </section>
     </header>
     <main>
@@ -267,7 +163,7 @@
                 <p>Date: 09-06-2021</p>
             </header>
             <section>
-                <p>We are currently in the process of creating something amazing! Well, mostly something our Mother would be proud of us for.</p>
+                <p>We are currently in the process of creating something amazing for our website! Well, mostly something our Mother would be proud of us for.</p>
                 <p>We would like to give you a time frame of when to return but the Doctor seems to have misplaced the timey-wimey detector. So, the best we can do until we find that is present you with a progress bar (pictured above) that provides absolutely no help whatsoever.</p>
                 <span id="definition">
                     <a href="https://tardis.fandom.com/wiki/Timey-wimey_detector" title="Doctor Who - Timey Wimey Detector Wiki Page">Timey-Wimey Detector</a>
@@ -279,6 +175,29 @@
                 <p>Until then if you are looking for some help with a computer problem or any other electronics that are either talking back or generally causing you stress. Feel free to call us anytime.</p>
                 <p>On a serious note. Thank you for visiting us! We look forward to hearing from you.</p>
                 <p id="doc-name">The G33K Doctor</p>
+            </footer>
+        </article>
+        <article id="services">
+            <h2>Services We Offer</h2>
+            <header>
+                <h3>Basic Services:</h3>
+            </header>
+            <section>
+                <p>Here's a list of the general services that we offer.</p>
+                <p>If it has something to do with electronics we are more than happy to take a look as well as answer your questions.</p>
+            </section>
+            <section>
+                <ul>
+                    <li>Computer Diagnostics</li>
+                    <li>Computer Repair</li>
+                    <li>Electronics Diagnostics</li>
+                    <li>Soldering Repair</li>
+                    <li>Home Automation</li>
+                </ul>
+            </section>
+            <footer>
+                <p>Be sure to check our Google Busines listing for any special offers that we may currently be offering!</p>
+                <a href="https://www.google.com/search?q=g33k+doctors" title="Google Business listing for G33K Doctors">Google Business Listing</a>
             </footer>
         </article>
     </main>
