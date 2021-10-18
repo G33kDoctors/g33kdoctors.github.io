@@ -1,0 +1,15 @@
+// @use 'sass:meta';
+// @use 'sass:string';
+// @use '../0-variables/0-global' as v;
+
+// @function set-css-var(
+//     $colors,
+// ) {
+//     $colors: v.$colors;
+//     @each $color, $shades in $colors {
+//         @each $shade, $value in $shades {
+//             $var: unquote("--clr-#{$color}-#{$shade}: #{$value};");
+//             @return $var;
+//         }
+//     }
+// }

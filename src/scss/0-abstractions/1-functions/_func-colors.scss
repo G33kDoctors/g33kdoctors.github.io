@@ -1,0 +1,17 @@
+@use 'sass:color';
+@use '../0-variables/colors' as *;
+
+:root {
+    @each $category, $colors in $color-map {
+        @each $color, $value in $colors {
+            --clr-#{$category}__#{$color}: #{$value};
+        }
+    }
+}
+
+@function clr-vars ($category, $color, $map: $color-map) {
+    @if ($category and $color) {
+        $value: var(--clr-#{$category}__#{$color});
+        @return $value;
+    }
+}

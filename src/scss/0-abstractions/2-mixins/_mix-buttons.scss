@@ -1,0 +1,3 @@
+@mixin button-style($category, $color) {
+    background-color: clr-vars($category, $color);
+}

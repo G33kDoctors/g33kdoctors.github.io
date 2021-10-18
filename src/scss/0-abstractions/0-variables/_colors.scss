@@ -1,0 +1,41 @@
+@use "sass:color";
+///
+// Specialized Colors Specific to the Website
+///
+
+// Adjustments
+    $shade-amount: 20%;
+
+// Brand Colors
+    $brand-primary: hsla(217, 81%, 49%, 1.0);   // Bright Navy Blue
+    $brand-accent:  hsla(127, 81%, 49%, 1.0);   // Vivid Malachite
+    $brand-light:   hsla(0, 0%, 90%, 1.0);      // Platinum
+    $brand-base:    hsla(0, 0%, 38%, 1.0);      // Granite Gray
+    $brand-dark:    hsla(0, 0%, 18%, 1.0);      // Charleston Green (Black)
+
+// Basic Colors
+    $red:           hsla(0, 100%, 50%, 1.0);
+    $yellow:        hsla(60, 100%, 50%, 1.0);
+    $green:         hsla(120, 100%, 50%, 1.0);
+    $cyan:          hsla(180, 100%, 50%, 1.0);
+    $blue:          hsla(240, 100%, 50%, 1.0);
+    $pink:          hsla(300, 100%, 50%, 1.0);
+
+$color-map: (
+    "brand": (
+        "base": $brand-base,
+        "light": $brand-light,
+        "dark": $brand-dark,
+        "primary": $brand-primary,
+        "accent": $brand-accent,
+    ),
+    "basic": (
+        "red": $red,
+        "yellow": $yellow,
+        "green": $green,
+        "cyan": $cyan,
+        "blue": $blue,
+        "pink": $pink,
+        
+    ),
+);
