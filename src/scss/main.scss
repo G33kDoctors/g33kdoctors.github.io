@@ -1,21 +1,2 @@
-@use './0-abstractions/0-global' as *;
-@use './1-core/0-global' as *;
 @use './2-components/0-global' as *;
 @use './3-layout/0-global' as *;
-
-// Post Title (this will be the title of your component)
-//
-// Large, **in charge**, and centered. (this is the description of your component. you can use markdown in here.)
-//
-// Markup (define the markup to be used in your styleguide):
-// <h1 class="post-title">A Post Title</h1>
-//
-// Styleguide Components.article.post-title 
-// (ꜛ this controls the organization of your style guide. Here, I'm filing this component inside Components / Article / Post Title)
-
-// .post-title {
-//     font-size: 3em;
-//     text-align: center;
-//     font-family: Arial, Helvetica, sans-serif;
-// }
-

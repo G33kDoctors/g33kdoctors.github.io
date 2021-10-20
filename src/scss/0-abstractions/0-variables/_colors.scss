@@ -7,35 +7,31 @@
     $shade-amount: 20%;
 
 // Brand Colors
-    $brand-primary: hsla(217, 81%, 49%, 1.0);   // Bright Navy Blue
-    $brand-accent:  hsla(127, 81%, 49%, 1.0);   // Vivid Malachite
-    $brand-light:   hsla(0, 0%, 90%, 1.0);      // Platinum
-    $brand-base:    hsla(0, 0%, 38%, 1.0);      // Granite Gray
-    $brand-dark:    hsla(0, 0%, 18%, 1.0);      // Charleston Green (Black)
+    $brand-primary:             hsla(217, 81%, 49%, 1.0);   // Bright Navy Blue
+    $brand-accent:              hsla(37, 81%, 49%, 1.0);    // Gamboge
+    $brand-alternative:         hsla(127, 81%, 49%, 1.0);   // Vivid Malachite
 
-// Basic Colors
-    $red:           hsla(0, 100%, 50%, 1.0);
-    $yellow:        hsla(60, 100%, 50%, 1.0);
-    $green:         hsla(120, 100%, 50%, 1.0);
-    $cyan:          hsla(180, 100%, 50%, 1.0);
-    $blue:          hsla(240, 100%, 50%, 1.0);
-    $pink:          hsla(300, 100%, 50%, 1.0);
+// Utility Colors
+    $utility-light:             hsla(40, 5%, 89%, 1.0);     // Platinum
+    $utility-base:              hsla(120, 0%, 51%, 1.0);    // Granite Gray
+    $utility-dark:              hsla(0, 0%, 18%, 1.0);      // Charleston Green (Black)
+    $utility-error:             hsla(1, 69%, 53%, 1.0);     // CG Red
+    $utility-warning:           hsla(46, 85%, 62%, 1.0);    // Maize
+    $utility-success:           hsla(140, 52%, 55%, 1.0);   // Emerald
 
+// Color Maps
 $color-map: (
     "brand": (
-        "base": $brand-base,
-        "light": $brand-light,
-        "dark": $brand-dark,
-        "primary": $brand-primary,
-        "accent": $brand-accent,
+        "primary":                $brand-primary,
+        "accent":                 $brand-accent,
+        "alternative":            $brand-alternative,
     ),
-    "basic": (
-        "red": $red,
-        "yellow": $yellow,
-        "green": $green,
-        "cyan": $cyan,
-        "blue": $blue,
-        "pink": $pink,
-        
+    "utility": (
+        "light":                  $utility-light,
+        "base":                   $utility-base,
+        "dark":                   $utility-dark,
+        "error":                  $utility-error,
+        "warning":                $utility-warning,
+        "success":                $utility-success,
     ),
 );

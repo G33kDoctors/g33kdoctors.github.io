@@ -1,15 +1,12 @@
 // .btn {
 //     --primary-color: #{get-color(accent)};
-
 //     display: inline-block;
 //     position: relative;
 //     isolation: isolate;
 //     padding: .5em 1.5em;
-
 //     font-family: inherit;
 //     text-decoration: none;
 //     line-height: inherit;
-
 //     color: $red;
 //     background: 0;
 //     border-width: 2px;
@@ -17,25 +14,20 @@
 //     border-style: solid;
 //     transition: color 300ms linear;
 // }
-
 // .btn:hover,
 // .btn:focus {
 //     color: $light;
 // }
-
 // .btn::after {
 //     content: '';
 //     position: absolute;
 //     inset: 0;
 //     z-index: -1;
-
 // }
-
 // .btn-primary {
 //     color: var(--primary-clr);
 //     border-color: var(--primary-clr);
 // }
-
 // .btn-accent {
 //     color: $accent;
 //     border-color: $accent;
@@ -44,8 +36,5 @@
 @use '../0-abstractions/0-global.scss' as *;
 
 button {
-    // @include button-style($category: brand, $color: primary);
-    background-color: clr-vars(brand, primary);
-    padding: 1em 2em;
-    border: 1px solid #1a1a1a;
+    @include button-styles();
 }
