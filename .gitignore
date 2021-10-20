@@ -1,3 +1,10 @@
+# Files
 .parcel-cache
 .vscode
-node_modules
+package-lock.json
+package.json
+
+# Folders
+node_modules/
+src/
+dist/
