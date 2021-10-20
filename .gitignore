@@ -5,6 +5,7 @@ package-lock.json
 package.json
 
 # Folders
-node_modules/
-src/
-dist/
+/node_modules
+/src
+/dist
+/.cache
