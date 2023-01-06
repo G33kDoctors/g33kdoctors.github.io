@@ -1,7 +1,0 @@
-@use '../1-functions/0-global' as *;
-
-@mixin button-styles {
-    background-color: clr-vars("primary");
-    border: 1px solid clr-vars("dark");
-    padding: 0.5em 1.5em;
-}
