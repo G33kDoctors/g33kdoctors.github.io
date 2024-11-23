@@ -1,8 +1,9 @@
+<img height="100em" width="auto" src="https://raw.githubusercontent.com/G33kDoctors/g33kdoctors.github.io/e1b4c0ff136b8f5e6df1bbe510ec74dddafcdcae/assets/images/Logo-Final.min.svg" alt="G33K Doctors Business Logo">
+
 # G33K Doctors Website
+
 An informative and well structured website for the G33K Doctors website.  
 _See [g33kdoctors.com](https://www.g33kdoctors.com/) to view the website._
-
-![G33K Doctors Business Logo](https://raw.githubusercontent.com/G33kDoctors/g33kdoctors.github.io/e1b4c0ff136b8f5e6df1bbe510ec74dddafcdcae/assets/images/Logo-Final.min.svg)
 
 ## Website Highlights
 1. Fully __responsive__ design supported across all popular devices.
